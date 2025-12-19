@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Test App",
   description: "Test App",
+  other: {
+    "base:app_id": "6941beecd77c069a945bdf74",
+  },
 };
 
 export default function RootLayout({
