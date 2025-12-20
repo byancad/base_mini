@@ -21,7 +21,7 @@ export async function GET() {
       subtitle: "Fast, fun, social",
       description: "A fast, fun way to challenge friends in real time.",
       screenshotUrls: [`${URL}/s1.png`, `${URL}/s2.png`, `${URL}/s3.png`],
-      primaryCategory: "game",
+      primaryCategory: "games",
       tags: ["example", "miniapp", "baseapp"],
       heroImageUrl: `${URL}/lizzzz.png`,
       tagline: "Buy LAVA tokens.",
