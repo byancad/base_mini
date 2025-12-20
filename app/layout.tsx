@@ -5,13 +5,37 @@ import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Test App",
-  description: "Test App",
-  other: {
-    "base:app_id": "6941beecd77c069a945bdf74",
-  },
+const URL =
+  process.env.NEXT_PUBLIC_URL || "https://main.dzwftl90knlfz.amplifyapp.com";
+
+const miniapp = {
+  version: "1",
+  name: "Example Mini App",
+  homeUrl: `${URL}/`,
+  iconUrl: `${URL}/lizzard.png`,
+  heroImageUrl: `${URL}/lizzzz.png`,
+  description: "A fast, fun way to challenge friends in real time.",
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: miniapp.name,
+    description: miniapp.description,
+    other: {
+      "fc:miniapp": JSON.stringify({
+        version: miniapp.version,
+        imageUrl: miniapp.heroImageUrl,
+        button: {
+          title: `Join the ${miniapp.name}`,
+          action: {
+            name: `Launch ${miniapp.name}`,
+            url: `${miniapp.homeUrl}`,
+          },
+        },
+      }),
+    },
+  };
+}
 
 export default function RootLayout({
   children,
