@@ -10,11 +10,11 @@ const URL =
 
 const miniapp = {
   version: "1",
-  name: "Example Mini App",
+  name: "Lava Dev Mini App",
   homeUrl: `${URL}/`,
   iconUrl: `${URL}/lizzard.png`,
   heroImageUrl: `${URL}/lizzzz.png`,
-  description: "A fast, fun way to challenge friends in real time.",
+  description: "Buy LAVA tokens.",
 };
 
 export async function generateMetadata(): Promise<Metadata> {
