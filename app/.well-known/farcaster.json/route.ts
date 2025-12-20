@@ -12,7 +12,7 @@ export async function GET() {
     },
     miniapp: {
       version: "1",
-      name: "Example Mini App",
+      name: "Lava Dev Mini App",
       homeUrl: `${URL}/`,
       iconUrl: `${URL}/lizzard.png`,
       splashImageUrl: `${URL}/green.png`,
@@ -28,7 +28,7 @@ export async function GET() {
       ogTitle: "Test Mini App",
       ogDescription: "Buy LAVA tokens description.",
       ogImageUrl: `${URL}/lizzzz.png`,
-      noindex: true,
+      noindex: false,
     },
   });
 }
