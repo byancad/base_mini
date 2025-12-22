@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   title: miniapp.name,
   description: miniapp.description,
   other: {
+    "base:app_id": "6941beecd77c069a945bdf74",
     "fc:miniapp": JSON.stringify({
       version: miniapp.version,
       imageUrl: "https://main.dzwftl90knlfz.amplifyapp.com/lizzzz.png",
@@ -30,6 +31,8 @@ export const metadata: Metadata = {
           type: "launch_frame",
           name: `Launch ${miniapp.name}`,
           url: `${miniapp.homeUrl}`,
+          splashImageUrl: "https://main.dzwftl90knlfz.amplifyapp.com/green.png",
+          splashBackgroundColor: "#800020",
         },
       },
     }),
