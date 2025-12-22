@@ -28,14 +28,13 @@ export const metadata: Metadata = {
     "fc:frame:button:1:action": "link",
     "fc:frame:button:1:target": miniapp.homeUrl,
     "fc:frame:post_url": miniapp.homeUrl,
-
-    // Mini App metadata (keep this too)
     "fc:miniapp": JSON.stringify({
       version: miniapp.version,
       imageUrl: miniapp.heroImageUrl,
       button: {
         title: `Join the ${miniapp.name}`,
         action: {
+          type: "launch_frame",
           name: `Launch ${miniapp.name}`,
           url: `${miniapp.homeUrl}`,
         },
