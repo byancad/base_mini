@@ -9,7 +9,7 @@ const URL =
   process.env.NEXT_PUBLIC_URL || "https://main.dzwftl90knlfz.amplifyapp.com";
 
 const miniapp = {
-  version: "next",
+  version: "1",
   name: "Lava Dev Mini App",
   homeUrl: `${URL}/`,
   iconUrl: `${URL}/lizzard.png`,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   other: {
     "fc:miniapp": JSON.stringify({
       version: miniapp.version,
-      imageUrl: miniapp.heroImageUrl,
+      imageUrl: "https://main.dzwftl90knlfz.amplifyapp.com/lizzzz.png",
       button: {
         title: `Join the ${miniapp.name}`,
         action: {
