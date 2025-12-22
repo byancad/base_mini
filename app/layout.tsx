@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: miniapp.name,
     description: miniapp.description,
     other: {
-      "fc:miniapp": JSON.stringify({
+      "fc:frame": JSON.stringify({
         version: miniapp.version,
         imageUrl: miniapp.heroImageUrl,
         button: {
