@@ -21,6 +21,15 @@ export const metadata: Metadata = {
   title: miniapp.name,
   description: miniapp.description,
   other: {
+    // Frame metadata for rich embeds
+    "fc:frame": "vNext",
+    "fc:frame:image": miniapp.heroImageUrl,
+    "fc:frame:button:1": `Join the ${miniapp.name}`,
+    "fc:frame:button:1:action": "link",
+    "fc:frame:button:1:target": miniapp.homeUrl,
+    "fc:frame:post_url": miniapp.homeUrl,
+
+    // Mini App metadata (keep this too)
     "fc:miniapp": JSON.stringify({
       version: miniapp.version,
       imageUrl: miniapp.heroImageUrl,
