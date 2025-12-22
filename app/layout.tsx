@@ -17,25 +17,23 @@ const miniapp = {
   description: "Buy LAVA tokens.",
 };
 
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: miniapp.name,
-    description: miniapp.description,
-    other: {
-      "fc:frame": JSON.stringify({
-        version: miniapp.version,
-        imageUrl: miniapp.heroImageUrl,
-        button: {
-          title: `Join the ${miniapp.name}`,
-          action: {
-            name: `Launch ${miniapp.name}`,
-            url: `${miniapp.homeUrl}`,
-          },
+export const metadata: Metadata = {
+  title: miniapp.name,
+  description: miniapp.description,
+  other: {
+    "fc:miniapp": JSON.stringify({
+      version: miniapp.version,
+      imageUrl: miniapp.heroImageUrl,
+      button: {
+        title: `Join the ${miniapp.name}`,
+        action: {
+          name: `Launch ${miniapp.name}`,
+          url: `${miniapp.homeUrl}`,
         },
-      }),
-    },
-  };
-}
+      },
+    }),
+  },
+};
 
 export default function RootLayout({
   children,
