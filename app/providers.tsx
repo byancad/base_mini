@@ -10,9 +10,9 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         appearance: {
           theme: "dark",
           accentColor: "#676FFF",
-          walletList: ["base_account"],
+          // walletList: ["base_account"],
         },
-        loginMethods: ["farcaster", "wallet", "email", "google", "twitter"],
+        loginMethods: ["farcaster", "wallet"],
         embeddedWallets: {
           ethereum: {
             createOnLogin: "users-without-wallets",
